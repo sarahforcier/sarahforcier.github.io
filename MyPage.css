@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-size: 75px;
+    font-family: 'Amatica SC', cursive;
+}
+p {
+    font-size: 25px;
+    font-family: 'Economica', sans-serif;
+    margin-top: -30px;
+}
+canvas {
+	width: 500;
+	height: 500;
+	border: none;
+}
+a { /* link */
+	text-decoration:none;
+	color: white;
+}
+a:hover {
+	color: grey;
+}

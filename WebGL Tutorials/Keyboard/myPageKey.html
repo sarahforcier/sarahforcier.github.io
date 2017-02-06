@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"> <!-- character set: english -->
+	  <meta name="description" content="Sarah Forcier">
+	  <title>Sarah Forcier</title>
+	  <link rel="stylesheet" href="MyPage.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="logo_icon.ico" />
+    <script src="webgl-utils.js"></script>
+    <script src="glMatrix.js"></script>
+
+    <!-- fragment shader (GLSL); high precision does not work on mobile, specify white-->
+    <script id="shader-fs" type="x-shader/x-fragment">
+      precision mediump float;
+
+      // varying vec4 vColor;
+      varying vec2 vTextureCoord;
+
+      uniform sampler2D uSampler; // represents texture
+
+      void main(void) {
+        // gl_FragColor = vColor; //varying
+        gl_FragColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t)); // or x and y
+      } 
+      </script>
+    <!-- vertex shader (GLSL);  uniform can be access outside shader-->
+    <script id="shader-vs" type="x-shader/x-vertex">
+      attribute vec3 aVertexPosition;
+      // attribute vec4 aVertexColor;
+      attribute vec2 aTextureCoord;
+
+      uniform mat4 uMVMatrix;
+      uniform mat4 uPMatrix;
+
+      // varying vec4 vColor;
+      varying vec2 vTextureCoord;
+
+      void main(void) {
+        gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0); //varying
+        // vColor = aVertexColor;
+        vTextureCoord = aTextureCoord;
+      } 
+      </script>
+
+    <script type="text/javascript" src = "MyPage.js" ></script>
+  </head>
+    <body onload="webGLStart();">
+      <h1> 
+        <strong> Sarah Forcier </strong> </h1>
+      <p>
+        Master of Science in Engineering in <a href= "http://cg.cis.upenn.edu/cggt_program.html"> Computer Graphics and Game Technology </a>  at the <a href= "http://www.seas.upenn.edu/"> University of Pennsylvania </a> </p>
+      <canvas id="canvas1" style="border: none;" width="500" height="500"></canvas>
+      <div id="links"> <ul> 
+      	<li> <a href= ""> Resume </a> </li>
+      	<li> <a href= "https://github.com/sarahforcier"> GitHub </a> </li>
+        <li> <a href= "https://youtube.com/"> DemoReel </a> </li>
+      	<li> <a href= "https://www.facebook.com/sarah.forcier.1"> Facebook </a> </li>
+      	<li> <a href= "https://www.linkedin.com/in/sarah-forcier-39724bb2?trk=nav_responsive_tab_profile"> LinkedIn </a> </li>
+      	<li> <a href= "mailto:sforcier12@gmail.com"> Email </a> </li>
+        <il> </div>
+
+        <script src="MyPage.js"></script>
+  </body>
+</html>
