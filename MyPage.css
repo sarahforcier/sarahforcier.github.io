@@ -17,6 +17,15 @@ canvas {
 	height: 500;
 	border: none;
 }
+
+.jumbotron {
+    height: 350px;
+    color: black:
+    text-shadow: #400 0 1px 1px;
+    background-image: url("images/jumbo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 a { /* link */
 	text-decoration:none;
 	color: white;
