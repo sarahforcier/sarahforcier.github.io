@@ -26,6 +26,21 @@ canvas {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+.carousel-inner {
+    width: auto;
+    height: 320px;
+    max-height: 320px;
+}
+
+.item {
+    margin: auto;
+}
+
+
+.item_active {
+    margin: auto;
+}
 a { /* link */
 	text-decoration:none;
 	color: white;
