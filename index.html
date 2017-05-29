@@ -1,237 +1,93 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-      <meta charset="utf-8"> <!-- character set: english -->
-  	  <meta name="description" content="Sarah Forcier">
-  	   <title>Sarah Forcier</title>
+<html>
+<head>
+	<title>Sarah Forcier</title>
 
-    <!-- B O O T S T R A P -->
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- B O O T S T R A P -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  	  <link rel="stylesheet" href="MyPage.css">
+	<!-- Optional theme 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	-->
+	
+	<link rel="stylesheet" href="MyPage.css">
       <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="logo_icon.ico" />
-  </head>
+
+	<script src = "scripts/scrollFade.js"></script>
+</head>
 
 <body data-spy = "scroll" data-target = "#my-navbar">
 
-<div class = "container">
-    <div class = "row">
-      <h1>Sarah Forcier</h1>
-      <h3 class = "social">
-            <a href = "Resume_graphics.pdf" target = "blank"><img src = "images/resume.png" style = "width: 6%;"></a>
-            <a href = "https://github.com/sarahforcier" target = "blank"><img src = "images/github.png" style = "width: 6%;"></a>
-            <a href = "" target = "blank"><img src = "images/youtube.png" style = "width: 7%;"></a>
-            <a href = "https://www.linkedin.com/in/sarah-forcier-39724bb2/" target = "blank"><img src = "images/linkedin.png" style = "width: 5%;"></a>
-            <a href = "https://www.facebook.com/sarah.forcier.1" target = "blank"><img src = "images/facebook.png" style = "width: 8%;"></a>
-            <a href = "https://www.pinterest.com/sforcier1/" target = "blank"><img src = "images/pinterest.png" style = "width: 5%;"></a>
-      </h3>
-    </div>
-  </div>
+<!-- N A V B A R -->
+<div class = "main-container">
+	<nav class = "navbar navbar-inverse navbar-fixed-top" id = "my-navbar">
+		<div class = "container">
+			<div class = "navbar-header">	
+				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				<a href = "index.html" class = "navbar-brand">SARAH FORCIER</a>
+			</div> <!-- end navbar header -->
+			<div class = "collapse navbar-collapse" id = "navbar-collapse">
+				<!--<a href = "#" class = "btn btn-info navbar-btn navbar-right">Navbar Button</a>-->
+				<ul class = "nav navbar-nav navbar-right">
+					<!--<li><a href = "about.html">about</a></li>-->
+					<li><a href = "rendering.html" target="blank">Path Tracer</a></li>
+					<li><a href = "procedural.html">Procedural Graphics</a></li>
+					<li><a href = "art.html">Art Projects</a></li>
+				</ul>
+			</div> <!-- end navbar collapse -->
+		</div> <!-- end container -->
+	</nav>
+<!-- E N D  N A V B A R -->
 
 <!-- J U M B O T R O N -->
- <!--  <div class = "jumbotron">
-    <div class = "container text-center jumbotron-content">
-
-    </div> <!-- end container -->
-  <!-- </div> -->
+	<div class = "jumbotron vertical-center">
+		<div class = "container text-center jumbotron-content">			
+			<h1>Sarah Forcier</h1>
+			<!--<h1 style = "margin-top:-15px; font-size:200%;"><small>Rutgers University Alumni &middot; Disney College Program Alumni &middot; Penn Grad Student</small></h1>-->			
+			<h3 class = "social">
+				<a href="https://github.com/sarahforcier" target="blank">github</a> | 
+				<a href = "https://www.linkedin.com/in/sarah-forcier-39724bb2/" target = "blank"> linkedin |
+				<a href = "Resume_graphics.pdf" target="blank">resume</a> |
+			</h3>
+		</div> <!-- end container -->
+	</div>
 <!-- E N D  J U M B O T R O N -->
-<br>
 
-  <div class = "container">
-    <div class>
-        <p align="center">
-          Master's student at the University of Pennsylvania in the Computer Graphics and Game Technology program.
-        </p>
-    </div>
-  </div>
+	<br>
 
-<div class="row">
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <div id="myCarousel1" class="carousel slide" data-ride="carousel1">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel1" data-slide-to="1"></li>
-          <li data-target="#myCarousel1" data-slide-to="2"></li>
-          <li data-target="#myCarousel1" data-slide-to="3"></li>
-          <li data-target="#myCarousel1" data-slide-to="4"></li>
-          <li data-target="#myCarousel1" data-slide-to="5"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="images/perlin.png" alt="Perlin Noise">
-            <!-- <div class= "perlin-caption"> <h3>Perlin Noise</h3> <p>hello</p></div> --></div>
-          <div class="item"><img src="images/wing.png" alt="Distribution of Feathers"></div>
-          <div class="item"><img src="images/tree2.png" alt="LSystem"></div>
-          <div class="item"><img src="images/town.png" alt="Shape Grammar"></div>
-          <div class="item"><img src="images/litsphere3.jpg" alt="Lit Sphere"></div>
-          <div class="item"><img src="images/lavalamp.jpg" alt="Lava Lamp"></div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="caption">
-        <br>
-        <p>Procedural Graphics</p>
-        <p><a href="https://sarahforcier.github.io/Project1-Noise/" class="btn btn-default" role="button">Perlin Noise</a>
-            <a href="https://sarahforcier.github.io/Project2-Toolbox-Functions/" class="btn btn-default" role="button">Distribution</a>
-            <a href="http://www.sarahforcier.com/Project3-LSystems/" class="btn btn-default" role="button">L-Systems</a>
-            <a href="http://www.sarahforcier.com/Project4-Shape-Grammar/" class="btn btn-default" role="button">Shape Grammar</a>
-            <a href="http://www.sarahforcier.com/Project5-Shaders/" class="btn btn-default" role="button">Shaders</a>
-            <a href="http://www.sarahforcier.com/Project6-MarchingCubes-Implicit-Surfaces/" class="btn btn-default" role="button">Lava Lamp</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <div id="myCarousel2" class="carousel slide" data-ride="carousel2">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel2" data-slide-to="1"></li>
-          <li data-target="#myCarousel2" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="images/glass.png" alt="Chania"></div>
-          <div class="item"><img src="images/two_lights.png" alt="Chania"></div>
-          <div class="item"><img src="images/all_shapes.png" alt="Chania"></div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="caption">
-        <br>
-        <p>Rendering</p>
-        <p><a href="images/glass.png" class="btn btn-default" role="button">Ray Tracer</a>
-            <a href="images/all_shapes.png" class="btn btn-default" role="button">Path Tracer</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <div id="myCarousel3" class="carousel slide" data-ride="carousel3">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel3" data-slide-to="1"></li>
-          <li data-target="#myCarousel3" data-slide-to="2"></li>
-          <li data-target="#myCarousel3" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="images/animated2.gif" alt="Sarah Forcier"></div>
-          <div class="item"><img src="images/german.jpg" alt="Chania"></div>
-          <div class="item"><img src="images/otter1.png" alt="Chania"></div>
-          <div class="item"><img src="images/hockey.jpg" alt="Chania"></div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="caption">
-        <br>
-        <p>3D Modeling</p>
-        <p><a href="images/animated2.gif" class="btn btn-default" role="button">Pocket Watch</a>
-            <a href="images/german.jpg" class="btn btn-default" role="button">German Town</a>
-            <a href="images/otter1.jpg" class="btn btn-default" role="button">Baby Otter</a>
-            <a href="images/hockey.jpg" class="btn btn-default" role="button">Ice Skates</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <div id="myCarousel4" class="carousel slide" data-ride="carousel4">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel4" data-slide-to="0" class="active>"</li>
-          <li data-target="#myCarousel4" data-slide-to="1"></li>
-          <li data-target="#myCarousel4" data-slide-to="2"></li>
-          <li data-target="#myCarousel4" data-slide-to="3"></li>
-          <li data-target="#myCarousel4" data-slide-to="4"></li>
-          <li data-target="#myCarousel4" data-slide-to="5"></li>
-          <li data-target="#myCarousel4" data-slide-to="6"></li>
-          <li data-target="#myCarousel4" data-slide-to="7"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="images/scf74-1.jpg" alt="Salzburg"></div>
-          <div class="item"><img src="images/scf74-2.jpg" alt="Naxos"></div>
-          <div class="item"><img src="images/scf74-3.jpg" alt="Alps"></div>
-          <div class="item"><img src="images/scf74-4.jpg" alt="Preiskolten"></div>
-          <div class="item"><img src="images/scf74-5.jpg" alt="Turkey"></div>
-          <div class="item"><img src="images/tuscany.jpg" alt="Tuscany"></div>
-          <div class="item"><img src="images/alps.jpg" alt="Alps"></div>
-          <div class="item"><img src="images/wallberg.jpg" alt="Wallberg"></div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="caption">
-        <br>
-        <p>Photography</p>
-        <br>
-        <p><a href="images/scf74-1.jpg" class="btn btn-default" role="button">1</a>
-            <a href="images/scf74-2.jpg" class="btn btn-default" role="button">2</a>
-            <a href="images/scf74-3.jpg" class="btn btn-default" role="button">3</a>
-            <a href="images/scf74-4.jpg" class="btn btn-default" role="button">4</a>
-            <a href="images/scf74-5.jpg" class="btn btn-default" role="button">5</a>
-            <a href="images/tuscany.jpg" class="btn btn-default" role="button">6</a>
-            <a href="images/alps.jpg" class="btn btn-default" role="button">7</a>
-            <a href="images/wallberg.jpg" class="btn btn-default" role="button">8</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
+	<footer class = "footer">
+		<div class = "container">	
+			<div class = "col-md-12" style = "text-align:right;">
+				<nav class = "navbar">
+					<div class = "container-fluid">
+						<div class = "navbar-header">
+							<span style = "text-align:left;">Sarah Forcier</span>
+							<br>
+							sforcier12@gmail.com
+						</div>
+						<a href = "https://www.youtube.com/channel/UC4BXi9vrZ-065DkYPABNhyw" target = "blank"><img src = "images/youtube.png" style = "width: 5%;"></a>
+						<a href = "https://github.com/sarahforcier" target = "blank"><img src = "images/git.png" style = "width: 5%;"></a>
+						<a href = "https://www.linkedin.com/in/sarah-forcier-39724bb2" target = "blank"><img src = "images/linkedin.png" style = "width: 5%;"></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</footer>
 
 </div> <!-- end main container -->
 
 <!-- S C R I P T S -->
-  <script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!--<script src = "scripts/scroll.js"></script>-->
-  <!--<script src = "scripts/scrollFade.js"></script>-->
+	<script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--<script src = "scripts/scroll.js"></script>-->
+	<!--<script src = "scripts/scrollFade.js"></script>-->
 </body>
 </html>
