@@ -107,7 +107,7 @@ fieldset[disabled] .btn-primary.active {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 22px;
   padding: 20px 40px;
 }
 .btn-xl:hover,
@@ -153,6 +153,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand {
   color: #fca4a4;
   font-family: 'Economica', sans-serif;
+  font-size: 18px;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -169,7 +170,7 @@ fieldset[disabled] .btn-xl.active {
   font-family: 'Economica', sans-serif;
   text-transform: uppercase;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
