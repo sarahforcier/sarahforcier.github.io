@@ -45,6 +45,7 @@ h6 {
   font-family: 'Economica', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 20px;
 }
 .img-centered {
   margin: 0 auto;
@@ -280,7 +281,7 @@ header .intro-text .intro-lead-in {
   }
 }
 section {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -297,7 +298,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 .service-heading {
@@ -335,10 +336,11 @@ section h3.section-subheading {
   text-align: center;
   top: 50%;
   margin-top: -12px;
-  color: #eeeeee;
+  color: #333333;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
+  color: #333333;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
@@ -347,13 +349,12 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  background-color: white;
   text-align: center;
-  padding: 25px;
+  padding: 15px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
-  margin: 0;
+  margin-top: 0px;
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
