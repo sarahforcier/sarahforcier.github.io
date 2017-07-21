@@ -43,8 +43,8 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Sarah Forcier</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,16 +54,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pathtracer">Path Tracer</a>
+                        <a class="page-scroll" href="#about">About Me</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#procedural">Procedural</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#pathtracer">Path Tracer</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#3dmodeling">3D Modeling</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About Me</a>
+                        <a class="page-scroll" href="#call-to-action">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -82,34 +85,35 @@
         </div>
     </header>
 
-    <!-- pathtracer Grid Section -->
-    <section id="pathtracer" class="bg-light-gray">
-    <section id="portfolio">
+        <!-- About Me Section -->
+    <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <h2 class="section-heading">Monte Carlo Path Tracer</h2>
-                    <h3> Features </h3>
-                    <p class="lead">Description</p>
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-member">
+                        <img src="img/me.JPG" class="img-responsive img-circle" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-responsive" src="img/rendering/bubbles.png" alt="">
-                    </a>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <h2 class="section-heading">About Me!</h2>
+                    <p class="lead">Description</p>
+                                    <ul class="nav navbar-nav">
+                    <li><a href="Resume_graphics.pdf"><i class="fa fa-file-text-o" target="_blank"></i></a>
+                    </li>
+                    <li><a href="https://github.com/sarahforcier" target="_blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/sarah-forcier-39724bb2/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
                 </div>
             </div>
         </div>
     </section>
-    </section>
 
-    <!-- portfolio Grid Section -->
-    <section id="procedural">
+        <!-- portfolio Grid Section -->
+    <section id="procedural" class="bg-light-gray">
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -130,7 +134,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Zionical</h4>
-                        <p class="text-muted">Interactive and Real-time digital Canyon with a highly abstracted and colorful environment. Effects are created with particles, noise functions, splines, and textures. </p>
+                        <p class="text-muted">Abstracted and colorful environment with interactive and real-time effects, which are created with particles, noise functions, splines, and textures. </p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -158,7 +162,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>BioCrowds</h4>
-                        <p class="text-muted">A Crowd simulation using the notion of personal space modelled with a space colonization algorithm. The space is divided into markers, each of which can only be owned by one agent per frame. </p>
+                        <p class="text-muted">Crowd simulation using the notion of personal space denoted with markers. The space colonization algorithm insures only one agent can own a marker per frame. </p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -202,6 +206,32 @@
                         <h4>Wing Generation</h4>
                         <p class="text-muted">Procedural modelling of a bird wing using distribution functions for variation. The position, size, orientation, and color of the feathers are mathematical defined. </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- pathtracer Grid Section -->
+    <section id="pathtracer">
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <h2 class="section-heading">Monte Carlo Path Tracer</h2>
+                    <h3> Features </h3>
+                    <p class="lead">Description</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" src="img/rendering/bubbles.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -280,45 +310,33 @@
     </section>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about">
+    <section id="call-to-action">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="row">
-                    <div class="team-member">
-                        <img src="img/me.JPG" class="img-responsive img-circle" alt="">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">GET IN TOUCH</h1>
+                        <
+                        <ul class="social">
+                            <li><a href="Resume_graphics.pdf"><i class="fa fa-file-text-o" target="_blank"></i></a>
+                            </li>
+                            <li><a href="https://github.com/sarahforcier" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/sarah-forcier-39724bb2/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/channel/UCsdhDjjc_WQMGLjGAp5Fe1w" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/sarah.forcier.1" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                        <a href="mailto:hello@sarahforcier.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Me</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <p class="large text-muted">aBOUT mE</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="Resume_graphics.pdf"><i class="fa fa-file-text-o" target="_blank"></i></a>
-                        </li>
-                        <li><a href="https://github.com/sarahforcier" target="_blank"><i class="fa fa-github"></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/sarah-forcier-39724bb2/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                        <li><a href="https://www.youtube.com/channel/UCsdhDjjc_WQMGLjGAp5Fe1w" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/sarah.forcier.1" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                    </ul>
-        </div>
-    </footer>
 
     <!-- pathtracing Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -466,6 +484,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
