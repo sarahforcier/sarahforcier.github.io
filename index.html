@@ -95,14 +95,14 @@
                     <hr class="section-heading-spacer">
                     <h2 class="section-heading" style="text-align: center">About Me</h2>
                     <ul class="list-inline social-buttons">
-                        <li><a href="Resume_graphics.pdf"><i class="fa fa-file-text-o" target="_blank"></i></a>
+                        <li><a href="Resume_graphics.pdf" target="_blank"><i class="fa fa-file-text-o" target="_blank"></i></a>
                         </li>
                         <li><a href="https://github.com/sarahforcier" target="_blank"><i class="fa fa-github"></i></a>
                         </li>
                         <li><a href="https://www.linkedin.com/in/sarah-forcier-39724bb2/" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
-                    <p class="lead">Description</p>
+                    <p class="lead">I am currently working at Dreamworks Animation as a R $amp D intern in the Rendering department. In the fall, I will finish my Master of Engineering in Computer Graphics at the University of Pennsylvania this comming fall 2017. I hope to one day work in film production as a technical director or artist in either animation or live-action VFX. </p>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Procedural Graphics</h2>
-                    <h3 class="section-subheading text-muted">WebGL, Three.js, javascript </h3>
+                    <h3 class="section-subheading text-muted">Mathematics as Art: a collection of digital assets created algorithmically. The projects are written in javascript using WebGL and the Three.js library </h3>
                 </div>
             </div>
             <div class="row">
@@ -217,7 +217,11 @@
                     <hr class="section-heading-spacer">
                     <h2 class="section-heading">Monte Carlo Path Tracer</h2>
                     <h3> Features </h3>
-                    <p class="lead">Description</p>
+                    <ul class="a" style="list-style-type: circle;">
+                      <li>Coffee</li>
+                      <li>Tea</li>
+                      <li>Coca Cola</li>
+                    </ul>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -314,7 +318,7 @@
                     <div class="block">
                         <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">GET IN TOUCH</h2>
                         <ul class="list-inline social-buttons">
-                            <li><a href="Resume_graphics.pdf"><i class="fa fa-file-text-o" target="_blank"></i></a>
+                            <li><a href="Resume_graphics.pdf" target="_blank"><i class="fa fa-file-text-o" target="_blank"></i></a>
                             </li>
                             <li><a href="https://github.com/sarahforcier" target="_blank"><i class="fa fa-github"></i></a>
                             </li>
@@ -325,7 +329,7 @@
                             <li><a href="https://www.facebook.com/sarah.forcier.1" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
-                        <a href="mailto:hello@sarahforcier.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Me</a>
+                        <a href="mailto:sforcier12@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Me</a>
                     </div>
                 </div>  
             </div>
@@ -364,21 +368,8 @@
                                             <h4 class="subheading">Sampling</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">hemisphere, cosine, stratified</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/direct.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Direct Lighting</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">TODO</p>
+                                            <p class="text-muted">In order to generate sample points on scene objects without bias, I implemented various sampling functions and calculated their probability density functions. </p>
+                                            <p class="text-muted">Stratified sampling was used to warp samples to a hemisphere, and cosine sampling was used to select samples at the poles where more energy contribution is made. </p>
                                         </div>
                                     </div>
                                 </li>
@@ -392,7 +383,23 @@
                                             <h4 class="subheading">Global Illumination</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">indirect ligthing path tracer</p>
+                                            <p class="text-muted">Developed a recursive integrator for calculating the Light Transport Equation, and sampling the BSDF of specular and lambertian materials. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="img-responsive" src="img/rendering/direct.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <br>
+                                            <h4 class="subheading">Direct Lighting</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Developed another integrator for the Light Transport Equation that handles direct light - light rays are created from points sampled on area lights. </p>
+                                            <p class="text-muted">Designed a multi-threaded approach to raycasting that sped up rendering time by 125% </p>
+                                            
                                         </div>
                                     </div>
                                 </li>
@@ -403,10 +410,11 @@
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <br>
-                                            <h4 class="subheading">Fresnel</h4>
+                                            <h4 class="subheading">Fresnel Materials</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">Glass, transmissive,</p>
+                                            <p class="text-muted">Created reflective and transmissive BSDF classes by calculating the fresnel reflection coefficient at a point of intersection.</p>
+                                            <p class="text-muted">BSDFs calculated at an intersection point can read color and tangent information from texture maps by converting rays into tangent spaces and looking up texel value. </p>
                                         </div>
                                     </div>
                                 </li>
@@ -417,10 +425,10 @@
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <br>
-                                            <h4 class="subheading">Microfacet</h4>
+                                            <h4 class="subheading">Microfacet Shading Model</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">Beckmann, ...</p>
+                                            <p class="text-muted">Trowbridge-Reitz and Beckmann distribution, ...</p>
                                         </div>
                                     </div>
                                 </li>
@@ -434,7 +442,7 @@
                                             <h4 class="subheading">Full lighting integration</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">improved</p>
+                                            <p class="text-muted">russian roullete, power heuristic</p>
                                         </div>
                                     </div>
                                 </li>
@@ -448,7 +456,8 @@
                                             <h4 class="subheading">Acceleration Structure</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">BVH, speedup</p>
+                                            <p class="text-muted">Implemented a Bounding Volume Hierarchy to contain objects in the scene and perform ray-intersect tests more efficiently. Subdivision of the scene bounding boxes were performed with a surface area heuristic, meaning that divisions were made based on a cost analysis of surface area.</p>
+                                            <p class="text-muted">For a scene with 5172 triangles, rendering time was sped up 193 times.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -459,10 +468,11 @@
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <br>
-                                            <h4 class="subheading">CSG</h4>
+                                            <h4 class="subheading">Geometry</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">TODO</p>
+                                            <p class="text-muted">CSG</p>
+                                            <p class="text-muted">Implemented geometry intersection functions for cube, cylinder, spheres, planes, disks, and meshes.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -473,10 +483,10 @@
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <br>
-                                            <h4 class="subheading">Environment Lighting</h4>
+                                            <h4 class="subheading">Lights</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">TODO</p>
+                                            <p class="text-muted">Environment Lighting, spot lights, point light</p>
                                         </div>
                                     </div>
                                 </li>
@@ -487,10 +497,10 @@
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <br>
-                                            <h4 class="subheading">Volumetric</h4>
+                                            <h4 class="subheading">Volumetric Integrator</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p class="text-muted">homogeneous</p>
+                                            <p class="text-muted">homogeneous,</p>
                                         </div>
                                     </div>
                                 </li>
