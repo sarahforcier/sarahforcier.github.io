@@ -86,12 +86,12 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-5 portfolio-item">
+                <div class="col-md-3 col-sm-3 portfolio-item">
                     <div class="team-member">
                         <img src="img/me.JPG" class="img-responsive img-circle" alt="">
                     </div>
                 </div>
-                <div class="col-md-7 col-sm-7">
+                <div class="col-md-9 col-sm-9">
                     <hr class="section-heading-spacer">
                     <h2 class="section-heading" style="text-align: center">About Me</h2>
                     <ul class="list-inline social-buttons">
@@ -102,7 +102,8 @@
                         <li><a href="https://www.linkedin.com/in/sarah-forcier-39724bb2/" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
-                    <p class="lead">I am currently working at Dreamworks Animation as a R $amp D intern in the Rendering department. In the fall, I will finish my Master of Engineering in Computer Graphics at the University of Pennsylvania this comming fall 2017. I hope to one day work in film production as a technical director or artist in either animation or live-action VFX. </p>
+                    <br>
+                    <p class="lead">I am currently working at Dreamworks Animation as a R&ampD intern in the Rendering department. In the fall, I will finish my Master of Engineering in Computer Graphics at the University of Pennsylvania this coming Fall 2017. I hope to one day work in film production as a technical director or artist in either animation or live-action VFX. </p>
                 </div>
             </div>
         </div>
@@ -216,11 +217,13 @@
                 <div class="col-md-6 col-sm-6"  style="text-align: center">
                     <hr class="section-heading-spacer">
                     <h2 class="section-heading">Monte Carlo Path Tracer</h2>
-                    <h3> Features </h3>
-                    <ul class="a" style="list-style-type: circle;">
-                      <li>Coffee</li>
-                      <li>Tea</li>
-                      <li>Coca Cola</li>
+                    <ul class="a">
+                      <li>Constructive Solid Geometry</li>
+                      <li>Multi-threaded</li>
+                      <li>Bounding Volume Hierarchy</li>
+                      <li>Texture Mapping</li>
+                      <li>Environment Lighting, Spot lights</li>
+                      <li>Volumetric Integrator</li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -356,158 +359,159 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
-                            <ul class="timeline">
-                                <li class="timeline">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/diskcon.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Sampling</h4>
+                        <div class="modal-body">
+                            <div class="col-lg-12" style="padding-bottom: 15%">
+                                <ul class="timeline">
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/diskcon.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">In order to generate sample points on scene objects without bias, I implemented various sampling functions and calculated their probability density functions. </p>
-                                            <p class="text-muted">Stratified sampling was used to warp samples to a hemisphere, and cosine sampling was used to select samples at the poles where more energy contribution is made. </p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Sampling</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">In order to generate sample points on scene objects without bias, I implemented various sampling functions and calculated their probability density functions. </p>
+                                                <!-- <p class="text-muted">Stratified sampling was used to warp samples to a hemisphere, and cosine sampling was used to select samples at the poles where more energy contribution is made. </p> -->
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/globalillum.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Global Illumination</h4>
+                                    </li>
+                                    <li class="timeline">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/globalillum.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">Developed a recursive integrator for calculating the Light Transport Equation, and sampling the BSDF of specular and lambertian materials. </p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Global Illumination</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Developed a recursive integrator for calculating the Light Transport Equation, and sampling the BSDF of specular and lambertian materials. </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/direct.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Direct Lighting</h4>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/direct.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">Developed another integrator for the Light Transport Equation that handles direct light - light rays are created from points sampled on area lights. </p>
-                                            <p class="text-muted">Designed a multi-threaded approach to raycasting that sped up rendering time by 125% </p>
-                                            
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Direct Lighting</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Developed another integrator for the Light Transport Equation that handles direct light - light rays are created from points sampled on area lights. </p>
+                                                <!-- <p class="text-muted">Designed a multi-threaded approach to raycasting that sped up rendering time by 125% </p> -->
+                                                
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/transmissive.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Fresnel Materials</h4>
+                                    </li>
+                                    <li class="timeline">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/transmissive.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">Created reflective and transmissive BSDF classes by calculating the fresnel reflection coefficient at a point of intersection.</p>
-                                            <p class="text-muted">BSDFs calculated at an intersection point can read color and tangent information from texture maps by converting rays into tangent spaces and looking up texel value. </p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Fresnel Materials</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Created reflective and transmissive BSDF classes by calculating the fresnel reflection coefficient at a point of intersection.</p>
+                                               <!--  <p class="text-muted">BSDFs calculated at an intersection point can read color and tangent information from texture maps by converting rays into tangent spaces and looking up texel value. </p> -->
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/microfacet.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Microfacet Shading Model</h4>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/microfacet.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">Trowbridge-Reitz and Beckmann distribution, ...</p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Microfacet Shading Model</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Trowbridge-Reitz and Beckmann distribution, ...</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/full_new.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Full lighting integration</h4>
+                                    </li>
+                                    <li class="timeline">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/full_new.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">russian roullete, power heuristic</p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Full lighting integration</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">russian roullete, power heuristic</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/wolf_on_floor.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Acceleration Structure</h4>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/wolf_on_floor.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">Implemented a Bounding Volume Hierarchy to contain objects in the scene and perform ray-intersect tests more efficiently. Subdivision of the scene bounding boxes were performed with a surface area heuristic, meaning that divisions were made based on a cost analysis of surface area.</p>
-                                            <p class="text-muted">For a scene with 5172 triangles, rendering time was sped up 193 times.</p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Acceleration Structure</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Implemented a Bounding Volume Hierarchy to contain objects in the scene and perform ray-intersect tests more efficiently. Subdivision of the scene bounding boxes were performed with a surface area heuristic.</p>
+                                                <!-- <p class="text-muted">For a scene with 5172 triangles, rendering time was sped up 193 times.</p> -->
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/csg.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Geometry</h4>
+                                    </li>
+                                    <li class="timeline">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/csg.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">CSG</p>
-                                            <p class="text-muted">Implemented geometry intersection functions for cube, cylinder, spheres, planes, disks, and meshes.</p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Geometry</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Implemented geometry intersection functions for cube, cylinder, spheres, planes, disks, constructive solid geometry and meshes.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/teapot.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Lights</h4>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/teapot.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">Environment Lighting, spot lights, point light</p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Lights</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">Environment Lighting, spot lights, point light</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <img class="img-responsive" src="img/rendering/volume.png" alt="">
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <br>
-                                            <h4 class="subheading">Volumetric Integrator</h4>
+                                    </li>
+                                    <li class="timeline">
+                                        <div class="timeline-image">
+                                            <img class="img-responsive" src="img/rendering/volume.png" alt="">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p class="text-muted">homogeneous,</p>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <br>
+                                                <h4 class="subheading">Volumetric Integrator</h4>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p class="text-muted">homogeneous,</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="modal-body">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                    </li>
+                                </ul>
+                                
+                                
                             </div>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -530,10 +534,10 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Pocketwatch Modeling</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="item-intro text-muted">Maya</p>
                                 <img class="img-responsive img-centered" src="img/modeling/animated.gif" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <p></p>
+                                <p></p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -558,10 +562,10 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Environment Modeling</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="item-intro text-muted">Maya</p>
                                 <img class="img-responsive img-centered" src="img/modeling/german.jpg" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <p></p>
+                                <p></p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -586,10 +590,10 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Hockey Skates</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="item-intro text-muted">Maya</p>
                                 <img class="img-responsive img-centered" src="img/modeling/hockey.jpg" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <p></p>
+                                <p></p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -614,10 +618,10 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Character Modeling</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="item-intro text-muted">Maya</p>
                                 <img class="img-responsive img-centered" src="img/modeling/otter1.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <p></p>
+                                <p></p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
