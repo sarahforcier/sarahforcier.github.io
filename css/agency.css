@@ -148,11 +148,11 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #555555;
+  background-color: #fca4a4;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #555555;
+  color: #fca4a4;
   font-family: 'Economica', sans-serif;
   font-size: 18px;
 }
@@ -175,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fca4a4;
+  background-color: #555555;
 }
 .navbar-custom .nav li a {
   font-family: 'Economica', sans-serif;
@@ -190,18 +190,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #fca4a4;
+  color: #999999;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fca4a4;
+  background-color: #555555;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fca4a4;
+  background-color: #999999;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -224,7 +224,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #555555;
+    background-color: #fca4a4;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -684,7 +684,7 @@ ul.social-buttons li a {
   text-align: center;
   border-radius: 100%;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 35px;
   color: white;
   outline: none;
   -webkit-transition: all 0.3s;
