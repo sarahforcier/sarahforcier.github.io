@@ -185,6 +185,9 @@ fieldset[disabled] .btn-xl.active {
   letter-spacing: 1px;
   color: #222222;
 }
+.navbar-custom .affix li a {
+  color: white;
+}
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #fca4a4;
@@ -419,6 +422,9 @@ section h3.section-subheading {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
+#call-to-action .btn-contact:hover {
+  background: #fca4a4;
+}
 #call-to-action .block .btn-contact i {
   margin-right: 10px;
 }
@@ -427,6 +433,9 @@ section h3.section-subheading {
   margin-right: 5%;
   text-align: justify;
   font-size: 18px;
+}
+#mainNav .affix-top {
+  color: #222222;
 }
 .scrolltop {
   display: none;
@@ -670,11 +679,11 @@ ul.social-buttons {
 ul.social-buttons li a {
   display: block;
   background-color: #222222;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   text-align: center;
   border-radius: 100%;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
   color: white;
   outline: none;
