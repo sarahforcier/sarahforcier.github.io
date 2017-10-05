@@ -7,6 +7,20 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('http://www.sarahforcier.com/video/demoReel.png') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
 .text-muted {
   color: #777777;
 }
@@ -183,7 +197,7 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #222222;
+  /*color: #222222;*/
 }
 .navbar-custom .affix li a {
   color: white;
@@ -232,8 +246,8 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/banner.png');
-  height: 56vh;
+  /*background-image: url('../img/banner.png');*/
+  height: 100vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -398,7 +412,7 @@ section h3.section-subheading {
 }
 #call-to-action .block h2 {
   margin-bottom: 15px;
-  color: white;
+  color: black;
   font-size: 40px;
 }
 #call-to-action .block p {
@@ -624,6 +638,7 @@ section h3.section-subheading {
 .team-member {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .team-member img {
   margin: auto;
@@ -642,7 +657,7 @@ aside.clients img {
   margin: 50px auto;
 }
 footer {
-  background-image: url('../img/footer.jpg');
+  background-image: url('../img/banner.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
